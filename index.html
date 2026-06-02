@@ -1,750 +1,569 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O-Tech</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O-Tech</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-  <body>
-    <section id="NavbarHome">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/logo/vl-logo-1.1.png"
-            alt="logo"
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <img src="https://html.vikinglab.agency/otech/assets/img/logo/vl-logo-1.1.png" alt="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Case Studies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Case Blog</a>
+            </li>
+          </ul>
+          <button class="btn btn-light">
+            Get Started <i class="fa-solid fa-up-right-from-square"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Pages</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Case Studies</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Case Blog</a
-                >
-              </li>
-            </ul>
-            <button class="btn btn-light">
-              Get Started <i class="fa-solid fa-up-right-from-square"></i>
-            </button>
-          </div>
-        </div>
-      </nav>
-      <div id="home">
-        <div id="left">
-          <h5 id="it">IT SOLUTIONS FOR A SMARTER FUTURE</h5>
-          <h1 id="mainheading">IT SOLUTIONS FOR A DIGITAL-FIRST WORLD</h1>
-          <p>
-            Empower your business with cutting technology solutions tailored to
-            meet your unique needs from cloud computing.
-          </p>
-          <button class="btn btn-light consultation">
-            BOOK A FREE CONSULTATION
-            <i class="fa-solid fa-up-right-from-square"></i>
-          </button>
-
-          <div id="summary">
-            <div id="client">
-              <h2>90K</h2>
-              <p>Happy Client</p>
-            </div>
-            <div id="project">
-              <h2>650+</h2>
-              <p>Total Projects</p>
-            </div>
-            <div id="work">
-              <h2>85+</h2>
-              <p>Work Together</p>
-            </div>
-          </div>
-        </div>
-        <div id="right">
-          <div class="position-relative">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/banner/vl-hero-4.1.png"
-              alt="img"
-            />
-            <span
-              class="position-absolute start-50 translate-middle-x"
-              style="top: 60%"
-            >
-              <div id="fixed">
-                <h5 class="AbsoluteTxt">
-                  Worked With More Than 100+ Technology
-                </h5>
-                <div id="detailabsolute">
-                  <div>
-                    <img
-                      src="https://html.vikinglab.agency/otech/assets/img/banner/vl-hero-group.png"
-                      id="absoluteImg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p class="AbsoluteTxt">100+ clients</p>
-                  </div>
-                </div>
-              </div>
-            </span>
-          </div>
         </div>
       </div>
-    </section>
-    <section id="choose">
-      <div id="leftSec" class="position-relative">
-        <img
-          src="https://html.vikinglab.agency/otech/assets/img/about/vl-about-4.1.png"
-          class="leftimg"
-          alt=""
-        />
-        <span class="position-absolute top-0 start-0 small-img"
-          ><img
-            src="https://html.vikinglab.agency/otech/assets/img/about/vl-about-top-sm-4.2.png"
-            alt="pic"
-        /></span>
-        <span class="position-absolute bottom-0 end-0 small-img2">
-          <div class="position-relative">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/icons/vl-about-poliogon.svg"
-              alt="img"
-              id="img2"
-            />
-            <h4
-              class="position-absolute top-50 start-50 translate-middle text-white text-center"
-            >
-              <span>
-                <h1 class="text-center">12 +</h1>
-              </span>
-              Years of Experience
-            </h4>
-          </div>
-        </span>
-      </div>
-      <div id="rightSec">
-        <h6 id="headindchoose">WHY CHOOSE US</h6>
-        <h1>Empower Your Business Every Step of the Way</h1>
+    </nav>
+  <section id="NavbarHome">
+    <div id="home">
+      <div id="left">
+        <h5 id="it">IT SOLUTIONS FOR A SMARTER FUTURE</h5>
+        <h1 id="mainheading">IT SOLUTIONS FOR A DIGITAL-FIRST WORLD</h1>
         <p>
-          Whether it optimizing IT infrastructure, enhancing cybersecurity, or
-          driving digital transformation, we are committed to helping.
-        </p>
-        <div id="choosetxt">
-          <div id="exe">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.1.svg"
-              class="chooseimg"
-              alt=""
-            />
-            <h4>Excellence in Solution</h4>
-            <p>We are committed delivering innovative, reliable & scalable</p>
-          </div>
-          <div id="deliver">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.2.svg"
-              class="chooseimg"
-              alt=""
-            />
-            <h4>Difference We Deliver</h4>
-            <p>Our team of experts brings years of experience across.</p>
-          </div>
-        </div>
-        <div id="abtbtn">
-          <button class="btn btn-light text-white aboutusbtn mt-4">
-            About US
-            <i class="fa-solid fa-up-right-from-square"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="service">
-      <div id="uppersec">
-        <h6 id="headingservice">OUR SERVICES</h6>
-      </div>
-      <h1 id="serviceheading">Empowering Growth with Smart IT Services</h1>
-      <div id="servicecard">
-        <div class="card" style="width: 25rem">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.11.svg"
-            class="chooseimg"
-            id="serviceimg"
-            alt="img1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Excellence in Solution</h5>
-            <p class="card-text">
-              Leverage the power cloud to enhance scalability, flexibility, and
-              performance Our cloud computing solutions secure.
-            </p>
-            <a href="#" class="btn" id="btn-learn"
-              >Learn more <i class="fa-solid fa-arrow-trend-up"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.22.svg"
-            class="chooseimg"
-            id="serviceimg"
-            alt="img1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Excellence in Solution</h5>
-            <p class="card-text">
-              Leverage the power cloud to enhance scalability, flexibility, and
-              performance Our cloud computing solutions secure.
-            </p>
-            <a href="#" class="btn" id="btn-learn"
-              >Learn more <i class="fa-solid fa-arrow-trend-up"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.3.svg"
-            class="chooseimg"
-            id="serviceimg"
-            alt="img1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Excellence in Solution</h5>
-            <p class="card-text">
-              Leverage the power cloud to enhance scalability, flexibility, and
-              performance Our cloud computing solutions secure.
-            </p>
-            <a href="#" class="btn" id="btn-learn"
-              >Learn more <i class="fa-solid fa-arrow-trend-up"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.4.svg"
-            class="chooseimg"
-            id="serviceimg"
-            alt="img1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Excellence in Solution</h5>
-            <p class="card-text">
-              Leverage the power cloud to enhance scalability, flexibility, and
-              performance Our cloud computing solutions secure.
-            </p>
-            <a href="#" class="btn" id="btn-learn"
-              >Learn more <i class="fa-solid fa-arrow-trend-up"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.5.svg"
-            class="chooseimg"
-            id="serviceimg"
-            alt="img1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Excellence in Solution</h5>
-            <p class="card-text">
-              Leverage the power cloud to enhance scalability, flexibility, and
-              performance Our cloud computing solutions secure.
-            </p>
-            <a href="#" class="btn" id="btn-learn"
-              >Learn more <i class="fa-solid fa-arrow-trend-up"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card" style="width: 25rem">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.6.svg"
-            class="chooseimg"
-            id="serviceimg"
-            alt="img1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Excellence in Solution</h5>
-            <p class="card-text">
-              Leverage the power cloud to enhance scalability, flexibility, and
-              performance Our cloud computing solutions secure.
-            </p>
-            <a href="#" class="btn" id="btn-learn"
-              >Learn more <i class="fa-solid fa-arrow-trend-up"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="case-study">
-      <div id="uppersec">
-        <h6 id="headingcase">CASE STUDIES</h6>
-      </div>
-      <h1 id="caseheading">Proof of Excellence in Action</h1>
-      <div class="owl-carousel owl-theme case-carousel">
-        <div class="item">
-          <div class="position-relative">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.1.png"
-              class="img-fluid"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 translate-middle btn-case"
-              >
-                Seamless Cloud Migration
-              </button></span
-            >
-            <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="position-relative">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.2.png"
-              class="img-fluid"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 translate-middle btn-case"
-              >
-                Seamless Cloud Migration
-              </button></span
-            >
-            <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="position-relative">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.3.png"
-              class="img-fluid"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 translate-middle btn-case"
-              >
-                Seamless Cloud Migration
-              </button></span
-            >
-            <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="position-relative">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.1.png"
-              class="img-fluid"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 translate-middle btn-case"
-              >
-                Seamless Cloud Migration
-              </button></span
-            >
-            <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonial">
-      <div id="left-test" class="text-light">
-        <h5 id="it">TESTIMONIAL</h5>
-        <h1 id="mainheading">Our Success is a Measured by Are Satisfaction</h1>
-        <p>
-          Their success is the greatest reflection of our commitment to
-          excellence.
+          Empower your business with cutting technology solutions tailored to
+          meet your unique needs from cloud computing.
         </p>
         <button class="btn btn-light consultation">
-          READ MORE REVIEWS
+          BOOK A FREE CONSULTATION
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </button>
+
+        <div id="summary">
+          <div id="client">
+            <h2>90K</h2>
+            <p>Happy Client</p>
+          </div>
+          <div id="project">
+            <h2>650+</h2>
+            <p>Total Projects</p>
+          </div>
+          <div id="work">
+            <h2>85+</h2>
+            <p>Work Together</p>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div class="position-relative">
+          <img src="https://html.vikinglab.agency/otech/assets/img/banner/vl-hero-4.1.png" alt="img" />
+          <span class="position-absolute start-50 translate-middle-x" style="top: 60%">
+            <div id="fixed">
+              <h5 class="AbsoluteTxt">
+                Worked With More Than 100+ Technology
+              </h5>
+              <div id="detailabsolute">
+                <div>
+                  <img src="https://html.vikinglab.agency/otech/assets/img/banner/vl-hero-group.png" id="absoluteImg"
+                    alt="" />
+                </div>
+                <div>
+                  <p class="AbsoluteTxt">100+ clients</p>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="choose">
+    <div id="leftSec" class="position-relative">
+      <img src="https://html.vikinglab.agency/otech/assets/img/about/vl-about-4.1.png" class="leftimg" alt="" />
+      <span class="position-absolute top-0 start-0 small-img"><img
+          src="https://html.vikinglab.agency/otech/assets/img/about/vl-about-top-sm-4.2.png" alt="pic" /></span>
+      <span class="position-absolute bottom-0 end-0 small-img2">
+        <div class="position-relative">
+          <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-about-poliogon.svg" alt="img" id="img2" />
+          <h4 class="position-absolute top-50 start-50 translate-middle text-white text-center">
+            <span>
+              <h1 class="text-center">12 +</h1>
+            </span>
+            Years of Experience
+          </h4>
+        </div>
+      </span>
+    </div>
+    <div id="rightSec">
+      <h6 id="headindchoose">WHY CHOOSE US</h6>
+      <h1>Empower Your Business Every Step of the Way</h1>
+      <p>
+        Whether it optimizing IT infrastructure, enhancing cybersecurity, or
+        driving digital transformation, we are committed to helping.
+      </p>
+      <div id="choosetxt">
+        <div id="exe">
+          <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.1.svg" class="chooseimg" alt="" />
+          <h4>Excellence in Solution</h4>
+          <p>We are committed delivering innovative, reliable & scalable</p>
+        </div>
+        <div id="deliver">
+          <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.2.svg" class="chooseimg" alt="" />
+          <h4>Difference We Deliver</h4>
+          <p>Our team of experts brings years of experience across.</p>
+        </div>
+      </div>
+      <div id="abtbtn">
+        <button class="btn btn-light text-white aboutusbtn mt-4">
+          About US
           <i class="fa-solid fa-up-right-from-square"></i>
         </button>
       </div>
-      <div id="right-test">
-        <div class="owl-carousel owl-theme test-carousel">
-          <div class="item">
-            <div class="card p-3" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Culpa distinctio repellendus cumque debitis nisi, porro qui
-                  saepe earum consequatur, nesciunt molestiae eius est dolore
-                  provident deserunt, maiores totam quibusdam labore.
-                </p>
+    </div>
+  </section>
+
+  <section id="service">
+    <div id="uppersec">
+      <h6 id="headingservice">OUR SERVICES</h6>
+    </div>
+    <h1 id="serviceheading">Empowering Growth with Smart IT Services</h1>
+    <div id="servicecard">
+      <div class="card" style="width: 25rem">
+        <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.11.svg" class="chooseimg"
+          id="serviceimg" alt="img1" />
+        <div class="card-body">
+          <h5 class="card-title">Excellence in Solution</h5>
+          <p class="card-text">
+            Leverage the power cloud to enhance scalability, flexibility, and
+            performance Our cloud computing solutions secure.
+          </p>
+          <a href="#" class="btn" id="btn-learn">Learn more <i class="fa-solid fa-arrow-trend-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card" style="width: 25rem">
+        <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.22.svg" class="chooseimg"
+          id="serviceimg" alt="img1" />
+        <div class="card-body">
+          <h5 class="card-title">Excellence in Solution</h5>
+          <p class="card-text">
+            Leverage the power cloud to enhance scalability, flexibility, and
+            performance Our cloud computing solutions secure.
+          </p>
+          <a href="#" class="btn" id="btn-learn">Learn more <i class="fa-solid fa-arrow-trend-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card" style="width: 25rem">
+        <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.3.svg" class="chooseimg"
+          id="serviceimg" alt="img1" />
+        <div class="card-body">
+          <h5 class="card-title">Excellence in Solution</h5>
+          <p class="card-text">
+            Leverage the power cloud to enhance scalability, flexibility, and
+            performance Our cloud computing solutions secure.
+          </p>
+          <a href="#" class="btn" id="btn-learn">Learn more <i class="fa-solid fa-arrow-trend-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card" style="width: 25rem">
+        <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.4.svg" class="chooseimg"
+          id="serviceimg" alt="img1" />
+        <div class="card-body">
+          <h5 class="card-title">Excellence in Solution</h5>
+          <p class="card-text">
+            Leverage the power cloud to enhance scalability, flexibility, and
+            performance Our cloud computing solutions secure.
+          </p>
+          <a href="#" class="btn" id="btn-learn">Learn more <i class="fa-solid fa-arrow-trend-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card" style="width: 25rem">
+        <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.5.svg" class="chooseimg"
+          id="serviceimg" alt="img1" />
+        <div class="card-body">
+          <h5 class="card-title">Excellence in Solution</h5>
+          <p class="card-text">
+            Leverage the power cloud to enhance scalability, flexibility, and
+            performance Our cloud computing solutions secure.
+          </p>
+          <a href="#" class="btn" id="btn-learn">Learn more <i class="fa-solid fa-arrow-trend-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card" style="width: 25rem">
+        <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-ser-ic-4.6.svg" class="chooseimg"
+          id="serviceimg" alt="img1" />
+        <div class="card-body">
+          <h5 class="card-title">Excellence in Solution</h5>
+          <p class="card-text">
+            Leverage the power cloud to enhance scalability, flexibility, and
+            performance Our cloud computing solutions secure.
+          </p>
+          <a href="#" class="btn" id="btn-learn">Learn more <i class="fa-solid fa-arrow-trend-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="case-study">
+    <div id="uppersec">
+      <h6 id="headingcase">CASE STUDIES</h6>
+    </div>
+    <h1 id="caseheading">Proof of Excellence in Action</h1>
+    <div class="owl-carousel owl-theme case-carousel">
+      <div class="item">
+        <div class="position-relative">
+          <img src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.1.png" class="img-fluid"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 translate-middle btn-case">
+              Seamless Cloud Migration
+            </button></span>
+          <span>
+            <button class="position-absolute top-50 start-50 translate-middle read-btn">
+              <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                <div class="read-txt">Read More</div>
+              </i>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-relative">
+          <img src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.2.png" class="img-fluid"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 translate-middle btn-case">
+              Seamless Cloud Migration
+            </button></span>
+          <span>
+            <button class="position-absolute top-50 start-50 translate-middle read-btn">
+              <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                <div class="read-txt">Read More</div>
+              </i>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-relative">
+          <img src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.3.png" class="img-fluid"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 translate-middle btn-case">
+              Seamless Cloud Migration
+            </button></span>
+          <span>
+            <button class="position-absolute top-50 start-50 translate-middle read-btn">
+              <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                <div class="read-txt">Read More</div>
+              </i>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-relative">
+          <img src="https://html.vikinglab.agency/otech/assets/img/studies/vl-studies-2.1.png" class="img-fluid"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 translate-middle btn-case">
+              Seamless Cloud Migration
+            </button></span>
+          <span>
+            <button class="position-absolute top-50 start-50 translate-middle read-btn">
+              <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                <div class="read-txt">Read More</div>
+              </i>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonial">
+    <div id="left-test" class="text-light">
+      <h5 id="it">TESTIMONIAL</h5>
+      <h1 id="mainheading">Our Success is a Measured by Are Satisfaction</h1>
+      <p>
+        Their success is the greatest reflection of our commitment to
+        excellence.
+      </p>
+      <button class="btn btn-light consultation">
+        READ MORE REVIEWS
+        <i class="fa-solid fa-up-right-from-square"></i>
+      </button>
+    </div>
+    <div id="right-test">
+      <div class="owl-carousel owl-theme test-carousel">
+        <div class="item">
+          <div class="card p-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Culpa distinctio repellendus cumque debitis nisi, porro qui
+                saepe earum consequatur, nesciunt molestiae eius est dolore
+                provident deserunt, maiores totam quibusdam labore.
+              </p>
+            </div>
+            <div class="d-flex gap-4">
+              <div>
+                <img src="https://html.vikinglab.agency/otech/assets/img/testimonial/vl-testimonial-1.1.png"
+                  class="card-img-bottom" alt="..." />
               </div>
-              <div class="d-flex gap-4">
-                <div>
-                  <img
-                    src="https://html.vikinglab.agency/otech/assets/img/testimonial/vl-testimonial-1.1.png"
-                    class="card-img-bottom"
-                    alt="..."
-                  />
-                </div>
-                <div>
-                  <h5 class="test-heading">Ben Stoke</h5>
-                  <p class="test-para">Developers</p>
-                </div>
-                <div class="test-img-icon">
-                  <img
-                    src="https://html.vikinglab.agency/otech/assets/img/icons/vl-testimonial-q2.svg"
-                    alt=""
-                  />
-                </div>
+              <div>
+                <h5 class="test-heading">Ben Stoke</h5>
+                <p class="test-para">Developers</p>
+              </div>
+              <div class="test-img-icon">
+                <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-testimonial-q2.svg" alt="" />
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card p-3" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Culpa distinctio repellendus cumque debitis nisi, porro qui
-                  saepe earum consequatur, nesciunt molestiae eius est dolore
-                  provident deserunt, maiores totam quibusdam labore.
-                </p>
+        </div>
+        <div class="item">
+          <div class="card p-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Culpa distinctio repellendus cumque debitis nisi, porro qui
+                saepe earum consequatur, nesciunt molestiae eius est dolore
+                provident deserunt, maiores totam quibusdam labore.
+              </p>
+            </div>
+            <div class="d-flex gap-4">
+              <div>
+                <img src="https://html.vikinglab.agency/otech/assets/img/testimonial/vl-testimonial-1.2.png"
+                  class="card-img-bottom" alt="..." />
               </div>
-              <div class="d-flex gap-4">
-                <div>
-                  <img
-                    src="https://html.vikinglab.agency/otech/assets/img/testimonial/vl-testimonial-1.2.png"
-                    class="card-img-bottom"
-                    alt="..."
-                  />
-                </div>
-                <div>
-                  <h5 class="test-heading">Ben Stoke</h5>
-                  <p class="test-para">Developers</p>
-                </div>
-                <div class="test-img-icon">
-                  <img
-                    src="https://html.vikinglab.agency/otech/assets/img/icons/vl-testimonial-q2.svg"
-                    alt=""
-                  />
-                </div>
+              <div>
+                <h5 class="test-heading">Ben Stoke</h5>
+                <p class="test-para">Developers</p>
+              </div>
+              <div class="test-img-icon">
+                <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-testimonial-q2.svg" alt="" />
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card p-3" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Culpa distinctio repellendus cumque debitis nisi, porro qui
-                  saepe earum consequatur, nesciunt molestiae eius est dolore
-                  provident deserunt, maiores totam quibusdam labore.
-                </p>
+        </div>
+        <div class="item">
+          <div class="card p-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Culpa distinctio repellendus cumque debitis nisi, porro qui
+                saepe earum consequatur, nesciunt molestiae eius est dolore
+                provident deserunt, maiores totam quibusdam labore.
+              </p>
+            </div>
+            <div class="d-flex gap-4">
+              <div>
+                <img src="https://html.vikinglab.agency/otech/assets/img/testimonial/vl-testimonial-1.1.png"
+                  class="card-img-bottom" alt="..." />
               </div>
-              <div class="d-flex gap-4">
-                <div>
-                  <img
-                    src="https://html.vikinglab.agency/otech/assets/img/testimonial/vl-testimonial-1.1.png"
-                    class="card-img-bottom"
-                    alt="..."
-                  />
-                </div>
-                <div>
-                  <h5 class="test-heading">Ben Stoke</h5>
-                  <p class="test-para">Developers</p>
-                </div>
-                <div class="test-img-icon">
-                  <img
-                    src="https://html.vikinglab.agency/otech/assets/img/icons/vl-testimonial-q2.svg"
-                    alt=""
-                  />
-                </div>
+              <div>
+                <h5 class="test-heading">Ben Stoke</h5>
+                <p class="test-para">Developers</p>
+              </div>
+              <div class="test-img-icon">
+                <img src="https://html.vikinglab.agency/otech/assets/img/icons/vl-testimonial-q2.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="pricing-plan" class="bg-light p-5">
-      <div id="uppersec">
-        <h6 id="headingcase">Our Pricing Plan</h6>
-      </div>
-      <h1 id="caseheading" class="price-heading">
-        Technology Solutions Within Your Budget
-      </h1>
-      <div id="pricing-card" class="d-flex justify-content-center gap-4">
-        <div
-          class="card p-4 position-relative"
-          id="resp-card"
-          style="border: 1px solid rgb(215, 215, 215)"
-        >
-          <span
-            class="card-plan-abs position-absolute top-0 start-50 translate-middle p-3"
-            style="width: 100%; max-width: 250px"
-          >
-            <p class="plan-para">Basic Plan</p>
-            <h2 style="text-align: center">
-              $49/<span class="fs-6">Monthly</span>
-            </h2>
-          </span>
-          <!-- <img src="..." class="card-img-top" alt="..." /> -->
-          <div class="card-body">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <p
-              class="card-text pt-5"
-              style="color: rgb(130, 129, 129); font-weight: normal"
-            >
-              Our pricing model is designed with your business in mind offer
-              range of packages.
-            </p>
-            <hr />
-            <ul class="list-group">
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i> Cyber Analytics
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i>
-                24/7 Consultant Service
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i> Great Customer Support
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i> Market Growth Solution
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i>
-                Digital Product Design
-              </li>
-            </ul>
-            <div id="abtbtn">
-              <button class="btn btn-light text-white aboutusbtn mt-4">
-                CHOOSE A PLAN
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card p-4 position-relative plan-card2" id="resp-card">
-          <span
-            class="card-plan-abs position-absolute top-0 start-50 translate-middle p-3"
-            style="width: 100%; max-width: 250px"
-          >
-            <p class="plan-para">Classic Plan</p>
-            <h2 style="text-align: center">
-              $49/<span class="fs-6">Monthly</span>
-            </h2>
-          </span>
-          <!-- <img src="..." class="card-img-top" alt="..." /> -->
-          <div class="card-body">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <p class="card-text pt-5" style="font-weight: normal; color: white">
-              Our pricing model is designed with your business in mind offer
-              range of packages.
-            </p>
-            <hr />
-            <ul class="list-group">
-              <li class="list-group-item border-0 plan-card2-list">
-                <i class="fa-solid fa-circle-check"></i> Cyber Analytics
-              </li>
-              <li class="list-group-item border-0 plan-card2-list">
-                <i class="fa-solid fa-circle-check"></i>
-                24/7 Consultant Service
-              </li>
-              <li class="list-group-item border-0 plan-card2-list">
-                <i class="fa-solid fa-circle-check"></i> Great Customer Support
-              </li>
-              <li class="list-group-item border-0 plan-card2-list">
-                <i class="fa-solid fa-circle-check"></i> Market Growth Solution
-              </li>
-              <li class="list-group-item border-0 plan-card2-list">
-                <i class="fa-solid fa-circle-check"></i>
-                Digital Product Design
-              </li>
-            </ul>
-            <button class="btn btn-light consultation">
-              READ MORE REVIEWS
+    </div>
+  </section>
+  <section id="pricing-plan" class="bg-light p-5">
+    <div id="uppersec">
+      <h6 id="headingcase">Our Pricing Plan</h6>
+    </div>
+    <h1 id="caseheading" class="price-heading">
+      Technology Solutions Within Your Budget
+    </h1>
+    <div id="pricing-card" class="d-flex justify-content-center gap-4">
+      <div class="card p-4 position-relative" id="resp-card" style="border: 1px solid rgb(215, 215, 215)">
+        <span class="card-plan-abs position-absolute top-0 start-50 translate-middle p-3"
+          style="width: 100%; max-width: 250px">
+          <p class="plan-para">Basic Plan</p>
+          <h2 style="text-align: center">
+            $49/<span class="fs-6">Monthly</span>
+          </h2>
+        </span>
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="card-body">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text pt-5" style="color: rgb(130, 129, 129); font-weight: normal">
+            Our pricing model is designed with your business in mind offer
+            range of packages.
+          </p>
+          <hr />
+          <ul class="list-group">
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i> Cyber Analytics
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i>
+              24/7 Consultant Service
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i> Great Customer Support
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i> Market Growth Solution
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i>
+              Digital Product Design
+            </li>
+          </ul>
+          <div id="abtbtn">
+            <button class="btn btn-light text-white aboutusbtn mt-4">
+              CHOOSE A PLAN
               <i class="fa-solid fa-up-right-from-square"></i>
             </button>
           </div>
         </div>
-        <div
-          class="card p-4 position-relative"
-          id="resp-card"
-          style="border: 1px solid rgb(215, 215, 215)"
-        >
-          <span
-            class="card-plan-abs position-absolute top-0 start-50 translate-middle p-3"
-            style="width: 100%; max-width: 250px"
-          >
-            <p class="plan-para">Normal Plan</p>
-            <h2 style="text-align: center">
-              $49/<span class="fs-6">Monthly</span>
-            </h2>
-          </span>
-          <!-- <img src="..." class="card-img-top" alt="..." /> -->
-          <div class="card-body">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <p
-              class="card-text pt-5"
-              style="color: rgb(130, 129, 129); font-weight: normal"
-            >
-              Our pricing model is designed with your business in mind offer
-              range of packages.
-            </p>
-            <hr />
-            <ul class="list-group">
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i> Cyber Analytics
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i>
-                24/7 Consultant Service
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i> Great Customer Support
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i> Market Growth Solution
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fa-solid fa-circle-check"></i>
-                Digital Product Design
-              </li>
-            </ul>
-            <div id="abtbtn">
-              <button class="btn btn-light text-white aboutusbtn mt-4">
-                CHOOSE A PLAN
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </button>
-            </div>
+      </div>
+      <div class="card p-4 position-relative plan-card2" id="resp-card">
+        <span class="card-plan-abs position-absolute top-0 start-50 translate-middle p-3"
+          style="width: 100%; max-width: 250px">
+          <p class="plan-para">Classic Plan</p>
+          <h2 style="text-align: center">
+            $49/<span class="fs-6">Monthly</span>
+          </h2>
+        </span>
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="card-body">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text pt-5" style="font-weight: normal; color: white">
+            Our pricing model is designed with your business in mind offer
+            range of packages.
+          </p>
+          <hr />
+          <ul class="list-group">
+            <li class="list-group-item border-0 plan-card2-list">
+              <i class="fa-solid fa-circle-check"></i> Cyber Analytics
+            </li>
+            <li class="list-group-item border-0 plan-card2-list">
+              <i class="fa-solid fa-circle-check"></i>
+              24/7 Consultant Service
+            </li>
+            <li class="list-group-item border-0 plan-card2-list">
+              <i class="fa-solid fa-circle-check"></i> Great Customer Support
+            </li>
+            <li class="list-group-item border-0 plan-card2-list">
+              <i class="fa-solid fa-circle-check"></i> Market Growth Solution
+            </li>
+            <li class="list-group-item border-0 plan-card2-list">
+              <i class="fa-solid fa-circle-check"></i>
+              Digital Product Design
+            </li>
+          </ul>
+          <button class="btn btn-light consultation">
+            READ MORE REVIEWS
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card p-4 position-relative" id="resp-card" style="border: 1px solid rgb(215, 215, 215)">
+        <span class="card-plan-abs position-absolute top-0 start-50 translate-middle p-3"
+          style="width: 100%; max-width: 250px">
+          <p class="plan-para">Normal Plan</p>
+          <h2 style="text-align: center">
+            $49/<span class="fs-6">Monthly</span>
+          </h2>
+        </span>
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="card-body">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text pt-5" style="color: rgb(130, 129, 129); font-weight: normal">
+            Our pricing model is designed with your business in mind offer
+            range of packages.
+          </p>
+          <hr />
+          <ul class="list-group">
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i> Cyber Analytics
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i>
+              24/7 Consultant Service
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i> Great Customer Support
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i> Market Growth Solution
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-circle-check"></i>
+              Digital Product Design
+            </li>
+          </ul>
+          <div id="abtbtn">
+            <button class="btn btn-light text-white aboutusbtn mt-4">
+              CHOOSE A PLAN
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </button>
           </div>
         </div>
       </div>
-    </section>
-    <section id="team">
-      <div id="uppersec-team">
-        <h6 id="heading-team">OUR TEAM</h6>
-        <h1 id="team-heading">Dedicated Professionals, Proven Results</h1>
-      </div>
-      <div class="owl-carousel owl-theme team-carousel">
-        <div class="item team-item">
-          <div class="position-relative teams">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.3.png"
-              class="img-fluid teams"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 btn-case btn-team"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i></button
-            ></span>
-            <!-- <span>
+    </div>
+  </section>
+  <section id="team">
+    <div id="uppersec-team">
+      <h6 id="heading-team">OUR TEAM</h6>
+      <h1 id="team-heading">Dedicated Professionals, Proven Results</h1>
+    </div>
+    <div class="owl-carousel owl-theme team-carousel">
+      <div class="item team-item">
+        <div class="position-relative teams">
+          <img src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.3.png" class="img-fluid teams"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 btn-case btn-team">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i></button></span>
+          <!-- <span>
               <button
                 class="position-absolute top-50 start-50 translate-middle read-btn"
               >
@@ -753,181 +572,275 @@
                 </i>
               </button>
             </span> -->
-          </div>
-          <div>
-            <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
-            <h6 style="text-align: center">CEO and Founder</h6>
-          </div>
         </div>
-        <div class="item team-item">
-          <div class="position-relative teams">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.1.png"
-              class="img-fluid teams"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 btn-case btn-team"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i></button
-            ></span>
-            <!-- <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span> -->
-          </div>
-          <div>
-            <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
-            <h6 style="text-align: center">CEO and Founder</h6>
-          </div>
-        </div>
-        <div class="item team-item">
-          <div class="position-relative teams">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.2.png"
-              class="img-fluid teams"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 btn-case btn-team"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i></button
-            ></span>
-            <!-- <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span> -->
-          </div>
-          <div>
-            <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
-            <h6 style="text-align: center">CEO and Founder</h6>
-          </div>
-        </div>
-        <div class="item team-item">
-          <div class="position-relative teams">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.4.png"
-              class="img-fluid teams"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 btn-case btn-team"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i></button
-            ></span>
-            <!-- <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span> -->
-          </div>
-          <div>
-            <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
-            <h6 style="text-align: center">CEO and Founder</h6>
-          </div>
-        </div>
-        <div class="item team-item">
-          <div class="position-relative teams">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.2.png"
-              class="img-fluid teams"
-              alt="caseStudy1"
-            />
-            <span
-              ><button
-                class="position-absolute bottom-0 start-50 btn-case btn-team"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i></button
-            ></span>
-            <!-- <span>
-              <button
-                class="position-absolute top-50 start-50 translate-middle read-btn"
-              >
-                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
-                  <div class="read-txt">Read More</div>
-                </i>
-              </button>
-            </span> -->
-          </div>
-          <div>
-            <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
-            <h6 style="text-align: center">CEO and Founder</h6>
-          </div>
+        <div>
+          <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
+          <h6 style="text-align: center">CEO and Founder</h6>
         </div>
       </div>
-    </section>
-    <section id="blog">
-      <div id="uppersec">
-        <h6 id="headingcase">Our Pricing Plan</h6>
+      <div class="item team-item">
+        <div class="position-relative teams">
+          <img src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.1.png" class="img-fluid teams"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 btn-case btn-team">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i></button></span>
+          <!-- <span>
+              <button
+                class="position-absolute top-50 start-50 translate-middle read-btn"
+              >
+                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                  <div class="read-txt">Read More</div>
+                </i>
+              </button>
+            </span> -->
+        </div>
+        <div>
+          <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
+          <h6 style="text-align: center">CEO and Founder</h6>
+        </div>
       </div>
-      <h1 id="caseheading">Technology Solutions Within Your Budget</h1>
-      <div id="card-blog" class="d-flex gap-5 gap-4">
-        <div id="card1-blog">
-          <div class="position-relative blog-card">
-            <img
-              src="https://html.vikinglab.agency/otech/assets/img/blog/vl-blog-4.1.png"
-              alt="blogimg1"
-              class="blogimg"
-            />
-            <div
-              id="blog-fixed-card"
-              class="bg-light position-absolutestart-0 bottom-0 translate-middle"
-            >
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="item team-item">
+        <div class="position-relative teams">
+          <img src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.2.png" class="img-fluid teams"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 btn-case btn-team">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i></button></span>
+          <!-- <span>
+              <button
+                class="position-absolute top-50 start-50 translate-middle read-btn"
+              >
+                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                  <div class="read-txt">Read More</div>
+                </i>
+              </button>
+            </span> -->
+        </div>
+        <div>
+          <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
+          <h6 style="text-align: center">CEO and Founder</h6>
+        </div>
+      </div>
+      <div class="item team-item">
+        <div class="position-relative teams">
+          <img src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.4.png" class="img-fluid teams"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 btn-case btn-team">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i></button></span>
+          <!-- <span>
+              <button
+                class="position-absolute top-50 start-50 translate-middle read-btn"
+              >
+                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                  <div class="read-txt">Read More</div>
+                </i>
+              </button>
+            </span> -->
+        </div>
+        <div>
+          <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
+          <h6 style="text-align: center">CEO and Founder</h6>
+        </div>
+      </div>
+      <div class="item team-item">
+        <div class="position-relative teams">
+          <img src="https://html.vikinglab.agency/otech/assets/img/team/vl-team-4.2.png" class="img-fluid teams"
+            alt="caseStudy1" />
+          <span><button class="position-absolute bottom-0 start-50 btn-case btn-team">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i></button></span>
+          <!-- <span>
+              <button
+                class="position-absolute top-50 start-50 translate-middle read-btn"
+              >
+                <i class="fa-solid fa-arrow-trend-up read-more fs-1">
+                  <div class="read-txt">Read More</div>
+                </i>
+              </button>
+            </span> -->
+        </div>
+        <div>
+          <h3 style="text-align: center; margin-top: 8px">Kendra cremin</h3>
+          <h6 style="text-align: center">CEO and Founder</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog">
+    <div id="uppersec">
+      <h6 id="headingcase">OUR BLOGS</h6>
+    </div>
+    <h1 id="caseheading">Latest Insights & Updates
+    </h1>
+    <div id="card-blog" class="d-flex gap-5 gap-4">
+      <div class="card1-blog">
+        <div class="position-relative blog-card">
+          <div class="position-relative icon-blog">
+            <img src="https://html.vikinglab.agency/otech/assets/img/blog/vl-blog-4.1.png" alt="blogimg1"
+              class="blogimg" />
+          </div>
+          <div class="bg-light position-absolutestart-0 bottom-0 translate-middle blog-fixed-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="blog-card-detail d-flex">
+                  <div class="calender d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p class="icon-txt"> 10 October 2024</p>
+                  </div>
+                  <div class="person d-flex">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <p class="icon-txt">Shakib Mahmud</p>
+                  </div>
                 </div>
+                <h5 class="card-title cardtitle-blog">Your Trusted Partner in Technology Transformation</h5>
+                <p class="card-text-blog">
+                  Looking to stay ahead in the fast-paced world technology?
+                <p class="card-text-blog">Our blog offers in-depth articles, case studies, & thought.</p>
+                </p>
+                <a href="#" class="btn btn-blog" id="btn-learn">Read More <i class="fa-solid fa-arrow-trend-up"></i>
+                </a>
               </div>
             </div>
+            <span class="position-absolute top-0 start-100 translate-middle icon-blog-card">
+              <i class="fa-solid fa-arrow-trend-up blog-card-icon"></i>
+            </span>
           </div>
         </div>
-        <div id="card2-blog">
-          <img
-            src="https://html.vikinglab.agency/otech/assets/img/blog/vl-blog-4.2.png"
-            alt=""
-            class="blogimg"
-          />
+      </div>
+      <div class="card1-blog">
+        <div class="position-relative blog-card">
+          <div class="position-relative icon-blog">
+            <img src="https://html.vikinglab.agency/otech/assets/img/blog/vl-blog-4.2.png" alt="blogimg1"
+              class="blogimg" />
+          </div>
+          <div class="bg-light position-absolutestart-0 bottom-0 translate-middle blog-fixed-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="blog-card-detail d-flex">
+                  <div class="calender d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p class="icon-txt"> 10 October 2024</p>
+                  </div>
+                  <div class="person d-flex">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <p class="icon-txt">Shakib Mahmud</p>
+                  </div>
+                </div>
+                <h5 class="card-title cardtitle-blog">Your Trusted Partner in Technology Transformation</h5>
+                <p class="card-text-blog">
+                  Looking to stay ahead in the fast-paced world technology?
+                <p class="card-text-blog">Our blog offers in-depth articles, case studies, & thought.</p>
+                </p>
+                <a href="#" class="btn btn-blog" id="btn-learn">Read More <i class="fa-solid fa-arrow-trend-up"></i>
+                </a>
+              </div>
+            </div>
+            <span class="position-absolute top-0 start-100 translate-middle icon-blog-card">
+              <i class="fa-solid fa-arrow-trend-up blog-card-icon"></i>
+            </span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+<section class="bg-light">
+  <section class="last-section">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <div class="footer-cta-banner-left">
+      <div class="cta-text">
+        <h2>Transform Your Business <br> Contact Us Today</h2>
+      </div>
+      <div class="cta-form">
+        <input type="email" name="email" id="" placeholder="Email Address">
+        <div class="subscribeBtn">
+          <button type="submit" class="contact hero-btn subscribe">SUBSCRIBE NOW
+            <span><i class="fa-solid fa-arrow-right"></i></span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cta-banner-right">
+      <div class="shapes">
+        <div class="shape3 sh">
+          <img src="./assets/emoji-4.3.svg">
+        </div>
+      </div>
+
+      <img src="./assets/black-person-i,g.webp" alt="" srcset="">
+    </div>
+  </section>
+</section>
+  <footer class="site-footer">
+
+    <div class="footer-col brand-col">
+      <div class="footer-logo">
+        <img src="./assets/vl-logo-1.webp" alt="" srcset="">
+      </div>
+      <p>We foster a culture of teamwork &
+        creative problem-solving to deliver
+        exceptional results for our clients.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col links-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Service</a></li>
+        <li><a href="#">Case Study</a></li>
+        <li><a href="#">Testimonial</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col links-col">
+      <h3>Our Service</h3>
+      <ul>
+        <li><a href="#">Cyber Security</a></li>
+        <li><a href="#">Network Analysis</a></li>
+        <li><a href="#">Data Recovery</a></li>
+        <li><a href="#">It Service</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col insta-col">
+      <h3>Instagram Post</h3>
+      <div class="insta-grid">
+        <div class="insta-item"><img src="./assets/ins-1.webp" alt="Post 1"></div>
+        <div class="insta-item"><img src="./assets/ins-2.webp" alt="Post 2"></div>
+        <div class="insta-item"><img src="./assets/ins-3.webp" alt="Post 3"></div>
+        <div class="insta-item"><img src="./assets/ins-4.webp" alt="Post 4"></div>
+        <div class="insta-item"><img src="./assets/ins-5.webp" alt="Post 5"></div>
+        <div class="insta-item"><img src="./assets/ins-6.webp" alt="Post 6"></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <footer class="bottom-footer">
+    <div class="bottom-footer-container">
+      <p>Copyright ©2024 O-Tech. All Rights Reserved</p>
+      <span>Terms & Conditions | Privacy Policy</span>
+    </div>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

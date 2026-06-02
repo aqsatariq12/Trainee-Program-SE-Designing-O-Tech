@@ -19,6 +19,9 @@ body {
   background-color: rgb(115, 68, 224);
   border-radius: 10px;
   padding: 20px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 ul {
@@ -287,9 +290,11 @@ ul {
   #right-test {
     width: 100% !important;
   }
+
   .owl-carousel.test-carousel {
     padding: 10px !important;
   }
+
   #pricing-card {
     flex-direction: column;
     align-items: center;
@@ -299,39 +304,142 @@ ul {
     width: 100%;
     max-width: 100%;
   }
+
   #pricing-plan {
     padding: 20px !important;
   }
+
   .aboutusbtn,
   .consultation {
     width: 100%;
   }
+
   .price-heading {
     margin-bottom: 80px !important;
   }
+
   .list-group {
     /* border: 1px solid red; */
     width: 100%;
     font-size: small;
     font-weight: bold;
   }
+
   #resp-card {
     padding: 0px !important;
   }
+
   .card-plan-abs {
     width: 100%;
     max-width: 150px !important;
     padding: 0px !important;
   }
+
   #team {
     padding: 30px !important;
   }
+
   #uppersec-team {
-  margin-left: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  #team-heading {
+    margin-bottom: 0px;
+  }
 }
-#team-heading {
-  margin-bottom: 0px;
+
+#card-blog {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid red !important; */
+  /* padding-left: 30px important; */
 }
+
+@media (max-width: 576px) {
+
+  #blog {
+    padding: 20px;
+  }
+
+  #card-blog {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #card1-blog {
+    width: 100%;
+  }
+
+  .blogimg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blog-fixed-card {
+    position: static !important;
+    margin-left: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    transform: none !important;
+    margin-left: -20px !important;
+  }
+
+  .blog-card {
+    overflow: visible;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .icon-txt {
+    font-size: small;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  #card-blog {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #card1-blog {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .blogimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-fixed-card {
+    margin-left: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    position: static !important;
+    transform: none !important;
+  }
+}
+
+
+@media (min-width: 673px) {
+
+  #card-blog {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  #card1-blog {
+    width: 48%;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 643px) {
@@ -439,6 +547,7 @@ ul {
   #choosetxt {
     flex-wrap: nowrap !important;
   }
+
   #pricing-card {
     flex-direction: column;
     align-items: center;
@@ -481,6 +590,7 @@ ul {
   .small-img {
     display: none;
   }
+
   .owl-carousel.owl-theme.test-carousel {
     /* border: 2px solid red; */
     display: flex;
@@ -488,23 +598,28 @@ ul {
     align-items: center;
   }
 }
+
 @media (max-width: 1285px) and (min-width: 1024px) {
   #pricing-card {
     flex-direction: column;
     align-items: center;
   }
+
   #pricing-plan {
     padding: 20px !important;
   }
+
   .list-group {
     /* border: 1px solid red; */
     width: 100%;
     font-size: large !important;
     font-weight: bold;
   }
+
   #resp-card {
     padding: 0px !important;
   }
+
   .card-plan-abs {
     width: 100%;
     max-width: 150px !important;
@@ -864,57 +979,70 @@ ul {
   background: white !important;
   color: rgb(94, 37, 216) !important;
 }
+
 .fa-circle-check {
   color: rgb(94, 37, 216) !important;
   font-size: large;
   margin-bottom: 10px;
 }
+
 .card-plan-abs {
   background: linear-gradient(to right, rgb(53, 1, 163), rgb(102, 60, 192));
   color: white;
   border-radius: 10px;
 }
+
 .plan-para {
   font-weight: bolder;
   font-size: large !important;
   letter-spacing: 2px;
   text-align: center;
 }
+
 .price-heading {
   margin-bottom: 150px !important;
   /* border: 1px solid red; */
 }
+
 .plan-card2 {
   background: linear-gradient(to right, rgb(53, 1, 163), rgb(102, 60, 192));
   color: white;
   /* border-radius: 10px; */
 }
+
 .plan-card2-list {
   background-color: transparent;
   color: white;
 }
+
 .plan-card2-list i {
   color: white !important;
 }
+
 #team {
   background-color: rgb(244, 242, 242);
   padding: 50px;
 }
+
 #uppersec-team {
   margin-left: 70px;
 }
+
 #team-heading {
   margin-bottom: 30px;
 }
+
 .img-fluid.teams {
   width: 100%;
   max-width: 300px;
   height: 100%;
   max-height: fit-content;
 }
+
 .img-fluid.teams:hover {
   filter: brightness(100%);
 }
+
 .position-relative.teams {
   /* border: 1px solid red; */
   display: flex;
@@ -923,8 +1051,26 @@ ul {
   width: 100%;
   max-width: 300px;
 }
+
 .position-relative.teams:hover {
   background-image: url("	https://html.vikinglab.agency/otech/assets/img/icons/vl-tean-shap1.svg");
+}
+
+.position-relative.teams {
+  position: relative;
+  overflow: hidden;
+}
+
+.position-relative.teams::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://html.vikinglab.agency/otech/assets/img/icons/vl-tean-shap1.svg");
+  opacity: 0.1;
+}
+
+.position-relative.teams img {
+  position: relative;
 }
 
 .btn-team {
@@ -940,6 +1086,7 @@ ul {
   transform: translateX(-50%) translateY(-20px);
   opacity: 1;
 }
+
 .fa-brands {
   font-size: 30px;
   /* border: 1px solid red; */
@@ -949,19 +1096,520 @@ ul {
   border-radius: 50px;
   margin-right: 10px;
 }
+
 .fa-brands:hover {
   color: rgb(102, 60, 192);
   background-color: white;
 }
-#blog{
+
+#blog {
   background-color: white;
   padding: 50px;
 }
-.blogimg{
+
+.blogimg {
   border-radius: 20px;
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 500px;
   /* padding-bottom: 30px !important; */
 }
-#blog-fixed-card{
-  border: 1px solid red;
-  margin-left: 268px;
+
+.blog-fixed-card {
+  /* border: 1px solid red; */
+  margin-left: 224px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.blog-card-icon {
+  font-size: 30px;
+  color: white;
+  /* border-radius: 30px; */
+  /* background-color: black; */
+}
+
+.icon-blog-card {
+  /* border: 1px solid red; */
+  border-radius: 30px;
+  padding: 10px;
+  background-color: black;
+}
+
+.blog-card:hover .icon-blog-card {
+  background: linear-gradient(to right, rgb(53, 1, 163), rgb(102, 60, 192)) !important;
+}
+
+.blog-card {
+  overflow: hidden;
+}
+
+.blog-card .blogimg {
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blogimg {
+  transform: scale(1.1);
+}
+
+.fa-regular {
+  font-size: 23px !important;
+}
+
+.person {
+  margin-left: 20px !important;
+}
+
+.blog-card:hover .btn-blog {
+  color: rgb(53, 1, 163) !important;
+}
+
+.blog-card:hover .cardtitle-blog {
+  color: rgb(53, 1, 163) !important;
+}
+
+
+.last-section {
+  /* background-color: lightblue !important; */
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, #2E0797 0%, #726EFC 100%);
+  width: 90% !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-radius: 24px;
+  padding: 3rem 3rem 0 3rem;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0px !important;
+  /* margin-top: 100px; */
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Elements ko boundary se bahar nikalne se rokega */
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 3rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.cta-text>h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  padding-bottom: 2rem;
+  color: white;
+  margin: 0;
+}
+
+.cta-form {
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  width: 100%;
+}
+
+.cta-form input {
+  padding: 1rem 11rem 1rem 1.5rem;
+  /* Padding balanced for internal button */
+  height: 4rem;
+  width: 100%;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.subscribeBtn {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+/* Ye css sirf subscribe now ki styling keliye he kiunke mere pas ye kyi jga use horha he isliye css lmbi he */
+
+.contact {
+  background-color: white;
+  color: #2E0797;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 0.4rem 0.4rem 0.4rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+/* Creates the secret color layer hidden in the center */
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  /* Hidden by default */
+  height: 100%;
+  background: linear-gradient(90deg, #2E0797 0%, #726EFC 100%);
+  z-index: -1;
+  /* Sits underneath the button text */
+  transition: width 0.4s ease-in-out;
+}
+
+/* When you hover, grow the width to 100% and turn text white */
+.contact:hover::before {
+  width: 100%;
+}
+
+/* THis ::before allows us to create a small box inside css withoiut using html */
+
+.contact:hover {
+  color: white;
+}
+
+
+.right-nav .contact>span,
+.contact.hero-btn>span {
+  background: linear-gradient(90deg, rgb(235, 232, 246) 0%, rgb(240, 239, 253) 100%);
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #2E0797;
+  transform: rotate(-45deg);
+  margin-left: 6px;
+  transition: 0.4s ease;
+}
+
+/* yhan tk  */
+
+.subscribeBtn button.contact.subscribe {
+  height: calc(4rem - 12px);
+  margin: 0 !important;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3rem;
+  border: none;
+  background-color: #2E0797;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.banner-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+
+.banner-right img {
+  max-height: 320px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+
+.shape3.sh {
+  position: absolute;
+  right: 35%;
+  top: 20%;
+  z-index: 1;
+  animation: vlbounce 5s linear infinite;
+}
+
+
+@keyframes vlbounce {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(20%)
+  }
+
+  100% {
+    transform: translateY(-20%);
+
+  }
+
+}
+
+.site-footer {
+  background-color: #F6F6F9;
+  width: 100%;
+  padding: 24px 10% 4rem 10% !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.brand-col p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #2E0797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #2E0797;
+  color: #fff;
+}
+
+.footer-col h3 {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.links-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.links-col ul li a {
+  color: rgba(22, 22, 22, 0.7);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.links-col ul li a:hover {
+  color: #726EFC;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 240px;
+}
+
+.insta-item {
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.insta-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   BOTTOM FOOTER
+   ========================================================================== */
+.bottom-footer {
+  background-color: #F6F6F9;
+  border-top: 1px solid #DDDEE1;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.bottom-footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (BREAKPOINT BREAKDOWN FOR RESPONSIVENESS)
+   ========================================================================== */
+
+@media (max-width: 1024px) and (min-width:673px) {
+  .site-footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .bottom-footer-container {
+    width: 90%;
+  }
+
+  .last-section {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .cta-text>h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .last-section {
+    width: 90% !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1.5rem 0 0;
+    margin-bottom: -180px;
+    /* Shift handle for tablet stacking */
+  }
+
+  .banner-left {
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .footer-cta-banner-left {
+    margin-left: -40px;
+  }
+
+  .cta-text>h2 {
+    font-size: 20px !important;
+    line-height: 2.8rem;
+    padding-bottom: 1.5rem;
+    /* padding-left: -40px !important; */
+  }
+
+  .banner-right {
+    width: 100%;
+  }
+
+  .banner-right img {
+    max-height: 280px;
+  }
+
+  .site-footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 240px;
+  }
+
+  .bottom-footer-container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .shape3.sh {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-footer {
+    /* 2 Columns grid strictly for layout management */
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 280px;
+    gap: 2.5rem 1.5rem;
+  }
+
+  /* Brand content aur Instagram content full row lelein (1 col stack) */
+  .footer-col.brand-col,
+  .footer-col.insta-col {
+    grid-column: span 2;
+  }
+
+  /* Dono Links-col ab half width lekar ek hi row mein side-by-side ayenge */
+  .footer-col.links-col {
+    grid-column: span 1;
+  }
+
+  .last-section {
+    margin-bottom: -240px;
+  }
+
+  /* Transform relative layout for smaller inputs */
+  .cta-form input {
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 3.5rem;
+  }
+
+  .subscribeBtn {
+    position: static;
+    transform: none;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .subscribeBtn button.contact.subscribe {
+    width: 100%;
+    justify-content: center;
+    border-radius: 12px;
+    height: 3.5rem;
+  }
+
+  .insta-grid {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }

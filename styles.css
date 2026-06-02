@@ -274,10 +274,9 @@ ul {
   }
 
   #testimonial {
-    padding: 0px !important; 
+    padding: 0px !important;
     display: flex;
     flex-direction: column;
-
   }
 
   #left-test {
@@ -288,10 +287,51 @@ ul {
   #right-test {
     width: 100% !important;
   }
-  .owl-carousel.test-carousel{
+  .owl-carousel.test-carousel {
     padding: 10px !important;
   }
-  
+  #pricing-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing-card .card {
+    width: 100%;
+    max-width: 100%;
+  }
+  #pricing-plan {
+    padding: 20px !important;
+  }
+  .aboutusbtn,
+  .consultation {
+    width: 100%;
+  }
+  .price-heading {
+    margin-bottom: 80px !important;
+  }
+  .list-group {
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: small;
+    font-weight: bold;
+  }
+  #resp-card {
+    padding: 0px !important;
+  }
+  .card-plan-abs {
+    width: 100%;
+    max-width: 150px !important;
+    padding: 0px !important;
+  }
+  #team {
+    padding: 30px !important;
+  }
+  #uppersec-team {
+  margin-left: 0px !important;
+}
+#team-heading {
+  margin-bottom: 0px;
+}
 }
 
 @media (min-width: 375px) and (max-width: 643px) {
@@ -399,9 +439,13 @@ ul {
   #choosetxt {
     flex-wrap: nowrap !important;
   }
+  #pricing-card {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media (max-width: 1024px) and (min-width: 642px) {
+@media (max-width: 1440px) and (min-width: 642px) {
   ul {
     font-size: large;
   }
@@ -437,11 +481,34 @@ ul {
   .small-img {
     display: none;
   }
-  .owl-carousel.owl-theme.test-carousel{
+  .owl-carousel.owl-theme.test-carousel {
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 1285px) and (min-width: 1024px) {
+  #pricing-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  #pricing-plan {
+    padding: 20px !important;
+  }
+  .list-group {
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: large !important;
+    font-weight: bold;
+  }
+  #resp-card {
+    padding: 0px !important;
+  }
+  .card-plan-abs {
+    width: 100%;
+    max-width: 150px !important;
+    padding: 0px !important;
   }
 }
 
@@ -545,7 +612,8 @@ ul {
   padding-top: 60px;
 }
 
-#headingservice {
+#headingservice,
+#heading-team {
   color: rgb(94, 37, 216);
   background-color: rgb(221, 219, 226);
   padding: 10px;
@@ -636,7 +704,6 @@ ul {
   border-radius: 10px;
   color: rgb(5, 19, 91);
   font-size: large;
-
 }
 
 .img-fluid {
@@ -731,7 +798,7 @@ ul {
   font-size: 40px;
   /* Increase arrow size */
   color: rgb(5, 19, 91);
-  font-weight: bolder
+  font-weight: bolder;
 }
 
 .owl-nav button {
@@ -742,11 +809,12 @@ ul {
 #testimonial {
   padding: 50px;
   display: flex;
-
+  align-items: center;
 }
 
 #left-test {
   width: 40%;
+  /* border: 2px solid red; */
 }
 
 #right-test {
@@ -795,4 +863,105 @@ ul {
 .test-carousel .owl-nav button:hover {
   background: white !important;
   color: rgb(94, 37, 216) !important;
+}
+.fa-circle-check {
+  color: rgb(94, 37, 216) !important;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.card-plan-abs {
+  background: linear-gradient(to right, rgb(53, 1, 163), rgb(102, 60, 192));
+  color: white;
+  border-radius: 10px;
+}
+.plan-para {
+  font-weight: bolder;
+  font-size: large !important;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.price-heading {
+  margin-bottom: 150px !important;
+  /* border: 1px solid red; */
+}
+.plan-card2 {
+  background: linear-gradient(to right, rgb(53, 1, 163), rgb(102, 60, 192));
+  color: white;
+  /* border-radius: 10px; */
+}
+.plan-card2-list {
+  background-color: transparent;
+  color: white;
+}
+.plan-card2-list i {
+  color: white !important;
+}
+#team {
+  background-color: rgb(244, 242, 242);
+  padding: 50px;
+}
+#uppersec-team {
+  margin-left: 70px;
+}
+#team-heading {
+  margin-bottom: 30px;
+}
+.img-fluid.teams {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: fit-content;
+}
+.img-fluid.teams:hover {
+  filter: brightness(100%);
+}
+.position-relative.teams {
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+}
+.position-relative.teams:hover {
+  background-image: url("	https://html.vikinglab.agency/otech/assets/img/icons/vl-tean-shap1.svg");
+}
+
+.btn-team {
+  left: 50%;
+  transform: translateX(-50%) translateY(30px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  background: linear-gradient(to right, rgb(108, 72, 185), rgb(102, 60, 192));
+  width: 90%;
+}
+
+.team-item:hover .btn-team {
+  transform: translateX(-50%) translateY(-20px);
+  opacity: 1;
+}
+.fa-brands {
+  font-size: 30px;
+  /* border: 1px solid red; */
+  /* object-fit: fill !important; */
+  /* overflow: hidden; */
+  background-color: rgb(211, 191, 252);
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.fa-brands:hover {
+  color: rgb(102, 60, 192);
+  background-color: white;
+}
+#blog{
+  background-color: white;
+  padding: 50px;
+}
+.blogimg{
+  border-radius: 20px;
+  /* padding-bottom: 30px !important; */
+}
+#blog-fixed-card{
+  border: 1px solid red;
+  margin-left: 268px;
 }
